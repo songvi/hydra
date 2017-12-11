@@ -25,7 +25,7 @@ import (
 
 type HS256Generator struct{}
 
-func (g *HS256Generator) Generate(id string) (*jose.JSONWebKeySet, error) {
+func (g *HS256Generator) Generate(id string) (*jose.JsonWebKeySet, error) {
 	// Taken from NewHMACKey
 	key := &[16]byte{}
 	_, err := io.ReadFull(rand.Reader, key[:])
@@ -35,8 +35,8 @@ func (g *HS256Generator) Generate(id string) (*jose.JSONWebKeySet, error) {
 
 	var sliceKey = key[:]
 
-	return &jose.JSONWebKeySet{
-		Keys: []jose.JSONWebKey{
+	return &jose.JsonWebKeySet{
+		Keys: []jose.JsonWebKey{
 			{
 				Algorithm:    "HS256",
 				Key:          sliceKey,

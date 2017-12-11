@@ -25,7 +25,7 @@ import (
 
 type HS512Generator struct{}
 
-func (g *HS512Generator) Generate(id string) (*jose.JSONWebKeySet, error) {
+func (g *HS512Generator) Generate(id string) (*jose.JsonWebKeySet, error) {
 	// Taken from NewHMACKey
 	key := &[32]byte{}
 	_, err := io.ReadFull(rand.Reader, key[:])
@@ -35,8 +35,8 @@ func (g *HS512Generator) Generate(id string) (*jose.JSONWebKeySet, error) {
 
 	var sliceKey = key[:]
 
-	return &jose.JSONWebKeySet{
-		Keys: []jose.JSONWebKey{
+	return &jose.JsonWebKeySet{
+		Keys: []jose.JsonWebKey{
 			{
 				Algorithm:    "HS512",
 				Key:          sliceKey,

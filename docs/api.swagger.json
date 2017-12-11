@@ -54,9 +54,9 @@
         ],
         "responses": {
           "200": {
-            "description": "jsonWebKeySet",
+            "description": "JsonWebKeySet",
             "schema": {
-              "$ref": "#/definitions/jsonWebKeySet"
+              "$ref": "#/definitions/JsonWebKeySet"
             }
           },
           "401": {
@@ -432,7 +432,7 @@
           "https"
         ],
         "tags": [
-          "jsonWebKey"
+          "JsonWebKey"
         ],
         "summary": "Retrieve a JSON Web Key Set",
         "operationId": "getJsonWebKeySet",
@@ -455,9 +455,9 @@
         ],
         "responses": {
           "200": {
-            "description": "jsonWebKeySet",
+            "description": "JsonWebKeySet",
             "schema": {
-              "$ref": "#/definitions/jsonWebKeySet"
+              "$ref": "#/definitions/JsonWebKeySet"
             }
           },
           "401": {
@@ -484,7 +484,7 @@
           "https"
         ],
         "tags": [
-          "jsonWebKey"
+          "JsonWebKey"
         ],
         "summary": "Update a JSON Web Key Set",
         "operationId": "updateJsonWebKeySet",
@@ -508,15 +508,15 @@
             "name": "Body",
             "in": "body",
             "schema": {
-              "$ref": "#/definitions/jsonWebKeySet"
+              "$ref": "#/definitions/JsonWebKeySet"
             }
           }
         ],
         "responses": {
           "200": {
-            "description": "jsonWebKeySet",
+            "description": "JsonWebKeySet",
             "schema": {
-              "$ref": "#/definitions/jsonWebKeySet"
+              "$ref": "#/definitions/JsonWebKeySet"
             }
           },
           "401": {
@@ -543,7 +543,7 @@
           "https"
         ],
         "tags": [
-          "jsonWebKey"
+          "JsonWebKey"
         ],
         "summary": "Generate a new JSON Web Key",
         "operationId": "createJsonWebKeySet",
@@ -567,15 +567,15 @@
             "name": "Body",
             "in": "body",
             "schema": {
-              "$ref": "#/definitions/jsonWebKeySetGeneratorRequest"
+              "$ref": "#/definitions/JsonWebKeySetGeneratorRequest"
             }
           }
         ],
         "responses": {
           "200": {
-            "description": "jsonWebKeySet",
+            "description": "JsonWebKeySet",
             "schema": {
-              "$ref": "#/definitions/jsonWebKeySet"
+              "$ref": "#/definitions/JsonWebKeySet"
             }
           },
           "401": {
@@ -602,7 +602,7 @@
           "https"
         ],
         "tags": [
-          "jsonWebKey"
+          "JsonWebKey"
         ],
         "summary": "Delete a JSON Web Key",
         "operationId": "deleteJsonWebKeySet",
@@ -653,7 +653,7 @@
           "https"
         ],
         "tags": [
-          "jsonWebKey"
+          "JsonWebKey"
         ],
         "summary": "Retrieve a JSON Web Key",
         "operationId": "getJsonWebKey",
@@ -684,9 +684,9 @@
         ],
         "responses": {
           "200": {
-            "description": "jsonWebKeySet",
+            "description": "JsonWebKeySet",
             "schema": {
-              "$ref": "#/definitions/jsonWebKeySet"
+              "$ref": "#/definitions/JsonWebKeySet"
             }
           },
           "401": {
@@ -713,7 +713,7 @@
           "https"
         ],
         "tags": [
-          "jsonWebKey"
+          "JsonWebKey"
         ],
         "summary": "Update a JSON Web Key",
         "operationId": "updateJsonWebKey",
@@ -745,15 +745,15 @@
             "name": "Body",
             "in": "body",
             "schema": {
-              "$ref": "#/definitions/jsonWebKey"
+              "$ref": "#/definitions/JsonWebKey"
             }
           }
         ],
         "responses": {
           "200": {
-            "description": "jsonWebKey",
+            "description": "JsonWebKey",
             "schema": {
-              "$ref": "#/definitions/jsonWebKey"
+              "$ref": "#/definitions/JsonWebKey"
             }
           },
           "401": {
@@ -780,7 +780,7 @@
           "https"
         ],
         "tags": [
-          "jsonWebKey"
+          "JsonWebKey"
         ],
         "summary": "Delete a JSON Web Key",
         "operationId": "deleteJsonWebKey",
@@ -2099,7 +2099,7 @@
       },
       "x-go-package": "github.com/ory/hydra/jwk"
     },
-    "jsonWebKey": {
+    "JsonWebKey": {
       "type": "object",
       "properties": {
         "alg": {
@@ -2179,25 +2179,25 @@
           "x-go-name": "Y"
         }
       },
-      "x-go-name": "swaggerJSONWebKey",
+      "x-go-name": "swaggerJsonWebKey",
       "x-go-package": "github.com/ory/hydra/jwk"
     },
-    "jsonWebKeySet": {
+    "JsonWebKeySet": {
       "type": "object",
       "properties": {
         "keys": {
           "description": "The value of the \"keys\" parameter is an array of JWK values.  By\ndefault, the order of the JWK values within the array does not imply\nan order of preference among them, although applications of JWK Sets\ncan choose to assign a meaning to the order for their purposes, if\ndesired.",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/jsonWebKey"
+            "$ref": "#/definitions/JsonWebKey"
           },
           "x-go-name": "Keys"
         }
       },
-      "x-go-name": "swaggerJSONWebKeySet",
+      "x-go-name": "swaggerJsonWebKeySet",
       "x-go-package": "github.com/ory/hydra/jwk"
     },
-    "jsonWebKeySetGeneratorRequest": {
+    "JsonWebKeySetGeneratorRequest": {
       "type": "object",
       "required": [
         "alg",
@@ -2565,7 +2565,7 @@
       ],
       "properties": {
         "Body": {
-          "$ref": "#/definitions/jsonWebKeySetGeneratorRequest"
+          "$ref": "#/definitions/JsonWebKeySetGeneratorRequest"
         },
         "set": {
           "description": "The set\nin: path",
@@ -2596,7 +2596,7 @@
       ],
       "properties": {
         "Body": {
-          "$ref": "#/definitions/jsonWebKeySet"
+          "$ref": "#/definitions/JsonWebKeySet"
         },
         "set": {
           "description": "The set\nin: path",
@@ -2614,7 +2614,7 @@
       ],
       "properties": {
         "Body": {
-          "$ref": "#/definitions/jsonWebKey"
+          "$ref": "#/definitions/JsonWebKey"
         },
         "kid": {
           "description": "The kid of the desired key\nin: path",

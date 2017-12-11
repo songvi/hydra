@@ -98,8 +98,8 @@ func getOrCreateTLSCertificate(cmd *cobra.Command, c *config.Config) tls.Certifi
 
 		private := jwk.First(keys.Key("private"))
 		private.Certificates = []*x509.Certificate{cert}
-		keys = &jose.JSONWebKeySet{
-			Keys: []jose.JSONWebKey{
+		keys = &jose.JsonWebKeySet{
+			Keys: []jose.JsonWebKey{
 				*private,
 				*jwk.First(keys.Key("public")),
 			},

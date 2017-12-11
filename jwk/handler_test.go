@@ -32,7 +32,7 @@ import (
 )
 
 var testServer *httptest.Server
-var IDKS *jose.JSONWebKeySet
+var IDKS *jose.JsonWebKeySet
 
 func init() {
 	localWarden, _ := compose.NewMockFirewall(
@@ -71,7 +71,7 @@ func TestHandlerWellKnown(t *testing.T) {
 	require.NoError(t, err, "problem in http request")
 	defer res.Body.Close()
 
-	var known jose.JSONWebKeySet
+	var known jose.JsonWebKeySet
 	err = json.NewDecoder(res.Body).Decode(&known)
 	require.NoError(t, err, "problem in decoding response")
 

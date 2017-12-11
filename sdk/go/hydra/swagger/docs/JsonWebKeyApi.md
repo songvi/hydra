@@ -30,7 +30,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JsonWebKeySet**](jsonWebKeySet.md)
+[**JsonWebKeySet**](JsonWebKeySet.md)
 
 ### Authorization
 
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JsonWebKeySet**](jsonWebKeySet.md)
+[**JsonWebKeySet**](JsonWebKeySet.md)
 
 ### Authorization
 
@@ -148,7 +148,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JsonWebKeySet**](jsonWebKeySet.md)
+[**JsonWebKeySet**](JsonWebKeySet.md)
 
 ### Authorization
 
@@ -179,7 +179,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JsonWebKey**](jsonWebKey.md)
+[**JsonWebKey**](JsonWebKey.md)
 
 ### Authorization
 
@@ -209,7 +209,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JsonWebKeySet**](jsonWebKeySet.md)
+[**JsonWebKeySet**](JsonWebKeySet.md)
 
 ### Authorization
 

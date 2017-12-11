@@ -429,7 +429,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**JsonWebKeySet**](jsonWebKeySet.md)
+[**JsonWebKeySet**](JsonWebKeySet.md)
 
 ### Authorization
 

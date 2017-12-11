@@ -17,13 +17,13 @@ package jwk
 import "github.com/square/go-jose"
 
 type Manager interface {
-	AddKey(set string, key *jose.JSONWebKey) error
+	AddKey(set string, key *jose.JsonWebKey) error
 
-	AddKeySet(set string, keys *jose.JSONWebKeySet) error
+	AddKeySet(set string, keys *jose.JsonWebKeySet) error
 
-	GetKey(set, kid string) (*jose.JSONWebKeySet, error)
+	GetKey(set, kid string) (*jose.JsonWebKeySet, error)
 
-	GetKeySet(set string) (*jose.JSONWebKeySet, error)
+	GetKeySet(set string) (*jose.JsonWebKeySet, error)
 
 	DeleteKey(set, kid string) error
 

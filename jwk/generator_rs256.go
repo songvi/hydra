@@ -28,7 +28,7 @@ type RS256Generator struct {
 	KeyLength int
 }
 
-func (g *RS256Generator) Generate(id string) (*jose.JSONWebKeySet, error) {
+func (g *RS256Generator) Generate(id string) (*jose.JsonWebKeySet, error) {
 	if g.KeyLength < 4096 {
 		g.KeyLength = 4096
 	}
@@ -42,8 +42,8 @@ func (g *RS256Generator) Generate(id string) (*jose.JSONWebKeySet, error) {
 
 	// jose does not support this...
 	key.Precomputed = rsa.PrecomputedValues{}
-	return &jose.JSONWebKeySet{
-		Keys: []jose.JSONWebKey{
+	return &jose.JsonWebKeySet{
+		Keys: []jose.JsonWebKey{
 			{
 				Algorithm:    "RS256",
 				Key:          key,

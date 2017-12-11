@@ -24,13 +24,13 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *HealthApi* | [**GetInstanceMetrics**](docs/HealthApi.md#getinstancemetrics) | **Get** /health/metrics | Show instance metrics (experimental)
 *HealthApi* | [**GetInstanceStatus**](docs/HealthApi.md#getinstancestatus) | **Get** /health/status | Check health status of this instance
-*JsonWebKeyApi* | [**CreateJsonWebKeySet**](docs/JsonWebKeyApi.md#createjsonwebkeyset) | **Post** /keys/{set} | Generate a new JSON Web Key
-*JsonWebKeyApi* | [**DeleteJsonWebKey**](docs/JsonWebKeyApi.md#deletejsonwebkey) | **Delete** /keys/{set}/{kid} | Delete a JSON Web Key
-*JsonWebKeyApi* | [**DeleteJsonWebKeySet**](docs/JsonWebKeyApi.md#deletejsonwebkeyset) | **Delete** /keys/{set} | Delete a JSON Web Key
-*JsonWebKeyApi* | [**GetJsonWebKey**](docs/JsonWebKeyApi.md#getjsonwebkey) | **Get** /keys/{set}/{kid} | Retrieve a JSON Web Key
-*JsonWebKeyApi* | [**GetJsonWebKeySet**](docs/JsonWebKeyApi.md#getjsonwebkeyset) | **Get** /keys/{set} | Retrieve a JSON Web Key Set
-*JsonWebKeyApi* | [**UpdateJsonWebKey**](docs/JsonWebKeyApi.md#updatejsonwebkey) | **Put** /keys/{set}/{kid} | Update a JSON Web Key
-*JsonWebKeyApi* | [**UpdateJsonWebKeySet**](docs/JsonWebKeyApi.md#updatejsonwebkeyset) | **Put** /keys/{set} | Update a JSON Web Key Set
+*JsonWebKeyApi* | [**CreateJsonWebKeySet**](docs/JsonWebKeyApi.md#createJsonWebKeyset) | **Post** /keys/{set} | Generate a new JSON Web Key
+*JsonWebKeyApi* | [**DeleteJsonWebKey**](docs/JsonWebKeyApi.md#deleteJsonWebKey) | **Delete** /keys/{set}/{kid} | Delete a JSON Web Key
+*JsonWebKeyApi* | [**DeleteJsonWebKeySet**](docs/JsonWebKeyApi.md#deleteJsonWebKeyset) | **Delete** /keys/{set} | Delete a JSON Web Key
+*JsonWebKeyApi* | [**GetJsonWebKey**](docs/JsonWebKeyApi.md#getJsonWebKey) | **Get** /keys/{set}/{kid} | Retrieve a JSON Web Key
+*JsonWebKeyApi* | [**GetJsonWebKeySet**](docs/JsonWebKeyApi.md#getJsonWebKeyset) | **Get** /keys/{set} | Retrieve a JSON Web Key Set
+*JsonWebKeyApi* | [**UpdateJsonWebKey**](docs/JsonWebKeyApi.md#updateJsonWebKey) | **Put** /keys/{set}/{kid} | Update a JSON Web Key
+*JsonWebKeyApi* | [**UpdateJsonWebKeySet**](docs/JsonWebKeyApi.md#updateJsonWebKeyset) | **Put** /keys/{set} | Update a JSON Web Key Set
 *OAuth2Api* | [**AcceptOAuth2ConsentRequest**](docs/OAuth2Api.md#acceptoauth2consentrequest) | **Patch** /oauth2/consent/requests/{id}/accept | Accept a consent request
 *OAuth2Api* | [**CreateOAuth2Client**](docs/OAuth2Api.md#createoauth2client) | **Post** /clients | Create an OAuth 2.0 client
 *OAuth2Api* | [**DeleteOAuth2Client**](docs/OAuth2Api.md#deleteoauth2client) | **Delete** /clients/{id} | Deletes an OAuth 2.0 Client

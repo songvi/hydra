@@ -24,7 +24,7 @@ import (
 	"github.com/square/go-jose"
 )
 
-func First(keys []jose.JSONWebKey) *jose.JSONWebKey {
+func First(keys []jose.JsonWebKey) *jose.JsonWebKey {
 	if len(keys) == 0 {
 		return nil
 	}
